@@ -1,4 +1,4 @@
-package com.sohnar.traffic.util.syncedList
+package com.traffic.util.syncedList
 {
 	import com.sohnar.traffic.util.syncedList.SyncedList;
 	
@@ -537,9 +537,9 @@ package com.sohnar.traffic.util.syncedList
 	}
 }
 import com.adobe.cairngorm.contract.Contract;
-import com.sohnar.traffic.util.syncedList.AbstractSyncedListItemFactory;
-import com.sohnar.traffic.util.syncedList.IDataToObjectFactory;
-import com.sohnar.traffic.util.syncedList.SyncedListRobot;
+import com.traffic.util.syncedList.AbstractSyncedListItemFactory;
+import com.traffic.util.syncedList.IDataToObjectFactory;
+import com.traffic.util.syncedList.SyncedListRobot;
 
 import mx.collections.IList;
 
