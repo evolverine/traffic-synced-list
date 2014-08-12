@@ -1,18 +1,18 @@
-package com.sohnar.traffic.util.syncedList
+package com.traffic.util.syncedList
 {
-	import com.adobe.cairngorm.contract.Contract;
-	import com.sohnar.traffic.interfaces.IDisposable;
-	import com.sohnar.traffic.util.CollectionUtils;
-	
-	import mx.collections.ArrayList;
-	import mx.collections.ICollectionView;
-	import mx.collections.IList;
-	import mx.collections.ListCollectionView;
-	import mx.events.CollectionEvent;
-	import mx.events.CollectionEventKind;
-	import mx.events.PropertyChangeEvent;
+    import com.adobe.cairngorm.contract.Contract;
+    import com.traffic.interfaces.IDisposable;
+    import com.traffic.util.CollectionUtils;
 
-	public class SyncedListRobot implements IDisposable
+    import mx.collections.ArrayList;
+    import mx.collections.ICollectionView;
+    import mx.collections.IList;
+    import mx.collections.ListCollectionView;
+    import mx.events.CollectionEvent;
+    import mx.events.CollectionEventKind;
+    import mx.events.PropertyChangeEvent;
+
+    public class SyncedListRobot implements IDisposable
 	{
 		private var _source:IList;
 		private var _factory:IDataToObjectFactory;

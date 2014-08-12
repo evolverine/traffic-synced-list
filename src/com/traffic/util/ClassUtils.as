@@ -1,4 +1,4 @@
-package com.sohnar.traffic.util
+package com.traffic.util
 {
 	import flash.utils.Dictionary;
 	import flash.utils.describeType;

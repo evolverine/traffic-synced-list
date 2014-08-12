@@ -1,4 +1,4 @@
-package com.sohnar.traffic.util.syncedList
+package com.traffic.util.syncedList
 {
 	public class AbstractSyncedListItemFactory implements IDataToObjectFactory
 	{
