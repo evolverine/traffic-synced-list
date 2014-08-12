@@ -1,7 +1,5 @@
 package com.traffic.util.syncedList
 {
-	import com.sohnar.traffic.util.syncedList.SyncedList;
-	
 	import mx.collections.ArrayList;
 	import mx.collections.IList;
 	import mx.collections.ListCollectionView;
