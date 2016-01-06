@@ -111,7 +111,7 @@ package com.traffic.util.syncedList
 					removeItemsFromDestination(items, location);
 			}
 			else
-				removeItemsByTracingThemInDestination(items, location);
+				removeItemsByTracingThemInDestination(items);
 		}
 		
 		private function removeItemsFromDestination(items:Array, location:int):void
@@ -130,7 +130,7 @@ package com.traffic.util.syncedList
 			}
 		}
 		
-		private function removeItemsByTracingThemInDestination(items:Array, location:int):void
+		private function removeItemsByTracingThemInDestination(items:Array):void
 		{
 			Contract.precondition(items != null);
 			
@@ -156,13 +156,13 @@ package com.traffic.util.syncedList
 		 * Override this in your implementation of the SyncedListRobot to
 		 * enable synced deletions.
 		 */
-		public function locateDestinationBySource(sourceObject:Object, inIerableList:IList):Object
+		public function locateDestinationBySource(sourceObject:Object, inIterableList:IList):Object
 		{
 			return null;
 		}
 		
 		/**
-		 * Due to https://issues.apache.org/jira/browse/FLEX-15159 we cannot iterate ArrayLists with for..each
+		 * We cannot iterate ArrayLists with for..each (see https://issues.apache.org/jira/browse/FLEX-15159)
 		 */
 		private function locateDestinationBySourceInUnfilteredList(sourceObject:Object):Object
 		{
